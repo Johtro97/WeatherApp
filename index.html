@@ -9,8 +9,43 @@
 </head>
 
 <body>
-    <main id="main"></main>
-    <footer id="footer"></footer>
+    <header>
+        <h1>The Weather App</h1>
+    </header>
+
+    <main class="main">
+        <section class="weather-container">
+            <div class="weather-wrapper">
+                <h2 class="city"></h2>
+                <h3 id="temp"></h3>
+                <h4 id="description"></h3>
+                    
+                <table id="weather-table">
+                    <thead>
+                        <th>Pressure</th>
+                        <th>Humidity</th>
+                        <th>Windspeed</th>
+                    </thead>
+                    <tbody>
+                        <td id="pressure"></td>
+                        <td id="humidity"></td>
+                        <td id="windspeed"></td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="update">
+            <button id="btn-update"><img src="icon/refresh.png"></button>
+        </section>   
+    </main>
+
+    <footer>
+        <section class="date">
+                <p id="time"></p>
+                <p id="date"></p>
+        </section>  
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
