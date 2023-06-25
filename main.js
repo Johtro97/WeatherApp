@@ -35,4 +35,10 @@ function displayWeather(weatherData){
   })
 }
 
+function updateWeather(){
+  fetchWeather("stockholm");
+}
+
+setInterval(updateWeather, 1800000); //update weather data every 30 min
+
 fetchWeather("stockholm");
