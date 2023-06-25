@@ -39,6 +39,16 @@ function updateWeather(){
   fetchWeather("stockholm");
 }
 
+function getDate(){
+  let date = new Date();
+  let day = date.toLocaleDateString();
+  let time = date.toTimeString().split(' ')[0];
+  document.getElementById("date").innerText = day;
+  document.getElementById("time").innerText = time;
+}
+
+
 setInterval(updateWeather, 1800000); //update weather data every 30 min
+setInterval(getDate, 1000); //update every second
 
 fetchWeather("stockholm");
